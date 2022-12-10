@@ -6,44 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>맛집</title>
     <link rel="stylesheet" href="filter.css">
+    <script src="filter.js"></script>
 </head>
 
 <body>
     <div class="company-name">
-        <a href="https://kangminwoo21.github.io/nojam/hompage">
+        <a href="file:///C:/nojam/hompage.html">
             <h4> 처음 화면으로</h4>
         </a>
     </div>
     <section>
         <h1>맛집</h1>
-
+        <ul>
+            <li class="active">All Menu</li>
+            <li>한식</li>
+            <li>중식</li>
+            <li>양식</li>
+            <li>분식</li>
+            <li>돈까스,회,일식</li>
+            <li>고기</li>
+        </ul>
 
         <div class="product">
-            <div class="boxs"><img src="image/food/mandoo.jpeg">코끼리만두<a href="https://blog.naver.com/shakebobby99/222718197624" target='_blank'><button>블로그</button></a><a href="https://naver.me/FIgoNFi5" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/bongyong.jpg">봉용불고기<a href="https://blog.naver.com/qw2nm/222924378727" target='_blank'><button>블로그</button></a><a href="https://naver.me/FpXMPhXp" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/hoho.jpg">쫄쫄호떡<a href="https://blog.naver.com/bangwul92/222890521347" target='_blank'><button>블로그</button></a><a href="https://naver.me/xTeDviRK" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="분식"><img src="image/food/mandoo.jpeg">코끼리만두<a href="https://blog.naver.com/shakebobby99/222718197624" target='_blank'><button>블로그</button></a><a href="https://naver.me/FIgoNFi5" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="고기"><img src="image/food/bongyong.jpg">봉용불고기<a href="https://blog.naver.com/qw2nm/222924378727" target='_blank'><button>블로그</button></a><a href="https://naver.me/FpXMPhXp" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="분식"><img src="image/food/hoho.jpg">쫄쫄호떡<a href="https://blog.naver.com/bangwul92/222890521347" target='_blank'><button>블로그</button></a><a href="https://naver.me/xTeDviRK" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/food/bori.jpeg">대산보리밥<a href="https://blog.naver.com/konyang-it/222901134896" target='_blank'><button>블로그</button></a><a href="https://naver.me/GPrFrp7Z" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/aki.jpeg">아키아키<a href="https://blog.naver.com/sssusi/222920853444" target='_blank'><button>블로그</button></a><a href="https://naver.me/52lhPSCH" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/hero.jpg">스시히어로<a href="https://blog.naver.com/justcamper_official/222847195314" target='_blank'><button>블로그</button></a><a href="https://naver.me/FfMss5hs" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="한식"><img src="image/food/bori.jpeg">대산보리밥<a href="https://blog.naver.com/konyang-it/222901134896" target='_blank'><button>블로그</button></a><a href="https://naver.me/GPrFrp7Z" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="돈까스,회,일식"><img src="image/food/aki.jpeg">아키아키<a href="https://blog.naver.com/sssusi/222920853444" target='_blank'><button>블로그</button></a><a href="https://naver.me/52lhPSCH" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="돈까스,회,일식"><img src="image/food/hero.jpg">스시히어로<a href="https://blog.naver.com/justcamper_official/222847195314" target='_blank'><button>블로그</button></a><a href="https://naver.me/FfMss5hs" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/food/mok.jpeg">목구멍<a href="https://blog.naver.com/doublej75/222924394478" target='_blank'><button>블로그</button></a><a href="https://naver.me/x50tXAcz" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/gogi.jpg">고기명작<a href="https://blog.naver.com/wasabi11/222887757131" target='_blank'><button>블로그</button></a><a href="https://naver.me/5h3klVnG" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/ihwa.jpg">이화연가<a href="https://blog.naver.com/rlaaleh1p/222925204175" target='_blank'><button>블로그</button></a><a href="https://naver.me/5fnjWR9j" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="고기"><img src="image/food/mok.jpeg">목구멍<a href="https://blog.naver.com/doublej75/222924394478" target='_blank'><button>블로그</button></a><a href="https://naver.me/x50tXAcz" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="고기"><img src="image/food/gogi.jpg">고기명작<a href="https://blog.naver.com/wasabi11/222887757131" target='_blank'><button>블로그</button></a><a href="https://naver.me/5h3klVnG" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="고기"><img src="image/food/ihwa.jpg">이화연가<a href="https://blog.naver.com/rlaaleh1p/222925204175" target='_blank'><button>블로그</button></a><a href="https://naver.me/5fnjWR9j" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/food/manta.jpg">만타<a href="https://blog.naver.com/suuming_/222853687121" target='_blank'><button>블로그</button></a><a href="https://naver.me/GZA8IbiX" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/1928.jpg">수이재 1928<a href="https://blog.naver.com/j292269d/222914363469" target='_blank'><button>블로그</button></a><a href="https://naver.me/Gcjn6WJV" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/donka.jpg">하츠동<a href="https://blog.naver.com/to-yeon/222927571153" target='_blank'><button>블로그</button></a><a href="https://naver.me/FJHY2hAw" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="양식"><img src="image/food/manta.jpg">만타<a href="https://blog.naver.com/suuming_/222853687121" target='_blank'><button>블로그</button></a><a href="https://naver.me/GZA8IbiX" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="고기"><img src="image/food/1928.jpg">수이재 1928<a href="https://blog.naver.com/j292269d/222914363469" target='_blank'><button>블로그</button></a><a href="https://naver.me/Gcjn6WJV" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="돈까스,회,일식"><img src="image/food/donka.jpg">하츠동<a href="https://blog.naver.com/to-yeon/222927571153" target='_blank'><button>블로그</button></a><a href="https://naver.me/FJHY2hAw" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/food/maga.jpeg">마가레뜨<a href="https://blog.naver.com/pastelera/222926998025" target='_blank'><button>블로그</button></a><a href="https://naver.me/xpPrlC4v" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/horang.jpeg">우암산호랭이<a href="https://blog.naver.com/hsseong98/222918629268" target='_blank'><button>블로그</button></a><a href="https://naver.me/FQayinC7" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/jjang.jpeg">짱이네<a href="https://blog.naver.com/kurenai83/222704704214" target='_blank'><button>블로그</button></a><a href="https://naver.me/G7KeYfk3" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="양식"><img src="image/food/maga.jpeg">마가레뜨<a href="https://blog.naver.com/pastelera/222926998025" target='_blank'><button>블로그</button></a><a href="https://naver.me/xpPrlC4v" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="양식"><img src="image/food/horang.jpeg">우암산호랭이<a href="https://blog.naver.com/hsseong98/222918629268" target='_blank'><button>블로그</button></a><a href="https://naver.me/FQayinC7" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="돈까스,회,일식"><img src="image/food/jjang.jpeg">짱이네<a href="https://blog.naver.com/kurenai83/222704704214" target='_blank'><button>블로그</button></a><a href="https://naver.me/G7KeYfk3" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/food/jungda.jpg">정다운샤브막국수<a href="https://blog.naver.com/qw2nm/222896964456" target='_blank'><button>블로그</button></a><a href="https://naver.me/5fnPrqEk" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/gumyong.jpeg">금용<a href="https://blog.naver.com/moon12_30/222898240081" target='_blank'><button>블로그</button></a><a href="https://naver.me/5L3uIRYq" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/food/agu.jpg">대왕아구찜해물찜<a href="https://blog.naver.com/yeam0528/222920498126" target='_blank'><button>블로그</button></a><a href="https://naver.me/xKQLLqIU" target='_blank'><button>네이버 지도</button></a></div>
-
-
+            <div class="boxs" data-filter="한식"><img src="image/food/jungda.jpg">정다운샤브막국수<a href="https://blog.naver.com/qw2nm/222896964456" target='_blank'><button>블로그</button></a><a href="https://naver.me/5fnPrqEk" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="중식"><img src="image/food/gumyong.jpeg">금용<a href="https://blog.naver.com/moon12_30/222898240081" target='_blank'><button>블로그</button></a><a href="https://naver.me/5L3uIRYq" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="한식"><img src="image/food/agu.jpg">대왕아구찜해물찜<a href="https://blog.naver.com/yeam0528/222920498126" target='_blank'><button>블로그</button></a><a href="https://naver.me/xKQLLqIU" target='_blank'><button>네이버 지도</button></a></div>
 
         </div>
 

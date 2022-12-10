@@ -6,46 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카페</title>
     <link rel="stylesheet" href="filter.css">
+    <script src="filter.js"></script>
 </head>
 
 <body>
     <div class="company-name">
-        <a href="https://kangminwoo21.github.io/nojam/hompage">
+        <a href="file:///C:/nojam/hompage.html">
             <h4> 처음 화면으로</h4>
         </a>
     </div>
     <section>
         <h1>카페</h1>
+        <ul>
+            <li class="active">All Menu</li>
+            <li>서원구</li>
+            <li>상당구</li>
+            <li>흥덕구</li>
+            <li>청원구</li>
 
+        </ul>
 
         <div class="product">
-            <div class="boxs"><img src="image/cafe/saha.jpeg">사하라<a href="https://blog.naver.com/hahahohoshe/222914229706" target='_blank'><button>블로그</button></a><a href="https://naver.me/xRQEXkPY" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/out.jpg">아우트로 커피<a href="https://blog.naver.com/dlsnrnswkd/222924425259" target='_blank'><button>블로그</button></a><a href="https://naver.me/FpXxKY2Y" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/ozi.jpeg">오지<a href="https://blog.naver.com/rabbit9975/222917197542" target='_blank'><button>블로그</button></a><a href="https://naver.me/5JJL36nG" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="흥덕구"><img src="image/cafe/saha.jpeg">사하라<a href="https://blog.naver.com/hahahohoshe/222914229706" target='_blank'><button>블로그</button></a><a href="https://naver.me/5U1GrHse" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/out.jpg">아우트로 커피<a href="https://blog.naver.com/dlsnrnswkd/222924425259" target='_blank'><button>블로그</button></a><a href="https://naver.me/FpXxKY2Y" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/ozi.jpeg">오지<a href="https://blog.naver.com/rabbit9975/222917197542" target='_blank'><button>블로그</button></a><a href="https://naver.me/5JJL36nG" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/cafe/comfort.jpg">컴포트커피<a href="https://blog.naver.com/lovely_yulss/222924573455" target='_blank'><button>블로그</button></a><a href="https://naver.me/FNmV67oA" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/duree.jpg">듀레베이커리<a href="https://blog.naver.com/funnyyj/222911707725" target='_blank'><button>블로그</button></a><a href="https://naver.me/G5rJR1a8" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/rato.jpeg">라토커피<a href="https://blog.naver.com/ths3514/222800270576" target='_blank'><button>블로그</button></a><a href="https://naver.me/GJr7w3xt" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="흥덕구"><img src="image/cafe/comfort.jpg">컴포트커피<a href="https://blog.naver.com/lovely_yulss/222924573455" target='_blank'><button>블로그</button></a><a href="https://naver.me/FNmV67oA" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/duree.jpg">듀레베이커리<a href="https://blog.naver.com/funnyyj/222911707725" target='_blank'><button>블로그</button></a><a href="https://naver.me/G5rJR1a8" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/rato.jpeg">라토커피<a href="https://blog.naver.com/ths3514/222800270576" target='_blank'><button>블로그</button></a><a href="https://naver.me/GJr7w3xt" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/cafe/tag.png">태그원<a href="https://blog.naver.com/hhoo08/222708923721" target='_blank'><button>블로그</button></a><a href="https://naver.me/GDcQxcVF" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/mal.jpg">사색말차<a href="https://blog.naver.com/won_91/222908954955" target='_blank'><button>블로그</button></a><a href="https://naver.me/5tjd7lbE" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/acre.jpeg">에이커<a href="https://blog.naver.com/dewmigi/222899459033" target='_blank'><button>블로그</button></a><a href="https://naver.me/F4N2TTyx" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/tag.png">태그원<a href="https://blog.naver.com/hhoo08/222708923721" target='_blank'><button>블로그</button></a><a href="https://naver.me/GDcQxcVF" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="서원구"><img src="image/cafe/mal.jpg">사색말차<a href="https://blog.naver.com/won_91/222908954955" target='_blank'><button>블로그</button></a><a href="https://naver.me/5tjd7lbE" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="서원구"><img src="image/cafe/acre.jpeg">에이커<a href="https://blog.naver.com/dewmigi/222899459033" target='_blank'><button>블로그</button></a><a href="https://naver.me/F4N2TTyx" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/cafe/oasis.jpg">데일리 오아시스<a href="https://blog.naver.com/yuuuk78/222878885044" target='_blank'><button>블로그</button></a><a href="https://naver.me/G14PFjPo" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/inmoon.jpeg">카페 후마니타스<a href="https://blog.naver.com/enfpspark/222907481316" target='_blank'><button>블로그</button></a><a href="https://naver.me/IDb7SZfs" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/ribi.jpg">라비린스<a href="https://blog.naver.com/st0083/222121973212" target='_blank'><button>블로그</button></a><a href="https://naver.me/F7C1nGt8" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="서원구"><img src="image/cafe/oasis.jpg">데일리 오아시스<a href="https://blog.naver.com/yuuuk78/222878885044" target='_blank'><button>블로그</button></a><a href="https://naver.me/G14PFjPo" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="흥덕구"><img src="image/cafe/inmoon.jpeg">카페 후마니타스<a href="https://blog.naver.com/enfpspark/222907481316" target='_blank'><button>블로그</button></a><a href="https://naver.me/IDb7SZfs" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/ribi.jpg">라비린스<a href="https://blog.naver.com/st0083/222121973212" target='_blank'><button>블로그</button></a><a href="https://naver.me/F7C1nGt8" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/cafe/cake.jpeg">흥흥제과<a href="https://blog.naver.com/lmj7369/222920754920" target='_blank'><button>블로그</button></a><a href="https://naver.me/5uxleJaR" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/ansem.jpg">안셈<a href="https://blog.naver.com/shally0107/222617261509" target='_blank'><button>블로그</button></a><a href="https://naver.me/FuV6VeCD" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/banu.jpg">바누아투과자점 <a href="https://blog.naver.com/llooll1009/222905139027" target='_blank'><button>블로그</button></a><a href="https://naver.me/xUE8sE91" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/cake.jpeg">흥흥제과<a href="https://blog.naver.com/lmj7369/222920754920" target='_blank'><button>블로그</button></a><a href="https://naver.me/5uxleJaR" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/ansem.jpg">안셈<a href="https://blog.naver.com/shally0107/222617261509" target='_blank'><button>블로그</button></a><a href="https://naver.me/FuV6VeCD" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="흥덕구"><img src="image/cafe/banu.jpg">바누아투과자점 <a href="https://blog.naver.com/llooll1009/222905139027" target='_blank'><button>블로그</button></a><a href="https://naver.me/xUE8sE91" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/cafe/art.jpg">아트빈<a href="https://blog.naver.com/jtong/222879363043" target='_blank'><button>블로그</button></a><a href="https://naver.me/5xlGjkvh" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/dare.jpeg">데어데어 베이커리카페<a href="https://blog.naver.com/funnyyj/222909619333" target='_blank'><button>블로그</button></a><a href="https://naver.me/IgTO7tqI" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/jay.jpg">제이브로<a href="https://blog.naver.com/grow_sun/222917731814" target='_blank'><button>블로그</button></a><a href="https://naver.me/5zJnurKB" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="청원구"><img src="image/cafe/art.jpg">아트빈<a href="https://blog.naver.com/jtong/222879363043" target='_blank'><button>블로그</button></a><a href="https://naver.me/5xlGjkvh" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/dare.jpeg">데어데어 베이커리카페<a href="https://blog.naver.com/funnyyj/222909619333" target='_blank'><button>블로그</button></a><a href="https://naver.me/IgTO7tqI" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/jay.jpg">제이브로<a href="https://blog.naver.com/grow_sun/222917731814" target='_blank'><button>블로그</button></a><a href="https://naver.me/5zJnurKB" target='_blank'><button>네이버 지도</button></a></div>
 
-            <div class="boxs"><img src="image/cafe/house.jpeg">컨트리하우스<a href="https://blog.naver.com/hirozihye/222920280145" target='_blank'><button>블로그</button></a><a href="https://naver.me/FdsHVwPB" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/sai.jpg">saisai<a href="https://blog.naver.com/hhoo08/222507210507" target='_blank'><button>블로그</button></a><a href="https://naver.me/5cTrY8TW" target='_blank'><button>네이버 지도</button></a></div>
-            <div class="boxs"><img src="image/cafe/four.jpg">포비 청주<a href="https://blog.naver.com/shmwlove6/222872502560" target='_blank'><button>블로그</button></a><a href="https://naver.me/F2vidSTo" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/house.jpeg">컨트리하우스<a href="https://blog.naver.com/hirozihye/222920280145" target='_blank'><button>블로그</button></a><a href="https://naver.me/FdsHVwPB" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="상당구"><img src="image/cafe/sai.jpg">saisai<a href="https://blog.naver.com/hhoo08/222507210507" target='_blank'><button>블로그</button></a><a href="https://naver.me/5cTrY8TW" target='_blank'><button>네이버 지도</button></a></div>
+            <div class="boxs" data-filter="흥덕구"><img src="image/cafe/four.jpg">포비 청주<a href="https://blog.naver.com/shmwlove6/222872502560" target='_blank'><button>블로그</button></a><a href="https://naver.me/F2vidSTo" target='_blank'><button>네이버 지도</button></a></div>
 
 
         </div>
