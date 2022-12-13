@@ -21,5 +21,5 @@
 + ##### Github pages를 이용해 인터넷과 연결한다.
 
 # 사이트 주소
-#### https://kangminwoo21.github.io/nojam/hompage
++ #### https://kangminwoo21.github.io/nojam/hompage
 
