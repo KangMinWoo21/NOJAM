@@ -8,7 +8,7 @@
 + ##### 관련 사이트를 연결한다.
 
 # 개발 언어
-+ ##### Html,CSS,JavaScript
++ ##### Html, CSS, JavaScript
 
 # 프로젝트 설계
 
